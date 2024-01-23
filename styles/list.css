@@ -1,0 +1,185 @@
+.cTasks {
+  display: none;
+}
+.line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 60px;
+}
+.line-c {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.title-sec2 {
+  font-size: 1.3rem;
+  position: relative;
+  margin-left: 15px;
+}
+.title-sec2 #icon-seta {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+  outline: none;
+}
+.head-links {
+  list-style: none;
+  margin: none;
+  padding: 0;
+  position: absolute;
+  top: 65px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+  overflow: auto;
+  padding-left: 50px;
+}
+.head-links li {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  outline: none;
+}
+.head-links #selected::after {
+  content: "";
+  display: block;
+  margin-top: 4%;
+  background-color: blue;
+  height: 4px;
+  width: auto;
+  margin-inline: 10px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+#title-line {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title-line {
+  margin-left: auto;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.tasks {
+  list-style: none;
+  padding: 0px;
+  overflow: auto;
+}
+.tasks li {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+  margin-top: 20px;
+}
+.tasks li button {
+  all: unset;
+}
+.tasks li h1 {
+  font-size: 1.2rem;
+}
+.tasks li i {
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 10px;
+  outline: none;
+}
+.tasks li i:hover {
+  color: red;
+}
+input[type="checkbox"] {
+  all: unset;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 15px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked {
+  all: unset;
+  display: block;
+  width: 21px;
+  height: 21px;
+  margin-right: 15px;
+  background-image: url("../images/check2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal .box-center {
+  width: 300px;
+  height: 300px;
+  background-color: rgb(82, 80, 80);
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.modal .box-center h1 {
+  background-color: rgb(66, 64, 64);
+  text-align: center;
+  font-size: 30px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.modal .box-center .content {
+  display: flex;
+  height: 210px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal .box-center .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+}
+.modal .box-center .content * {
+  margin: 0;
+  padding: 0;
+}
+.modal .box-center .content h4 {
+  margin-bottom: 5px;
+}
+.modal .box-center .content input {
+  border-radius: 5px;
+  border: 1px solid white;
+  padding-left: 5px;
+  width: 200px;
+  height: 20px;
+  font-size: 1.08rem;
+  font-weight: bold;
+}
+.modal .box-center .buttons button {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background-color: rgb(197, 197, 197);
+  cursor: pointer;
+  outline-color: red;
+}
+#addLists {
+  user-select: none;
+}
